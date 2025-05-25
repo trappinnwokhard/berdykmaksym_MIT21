@@ -10,9 +10,9 @@ public class JacketService {
     private AtomicInteger idCounter = new AtomicInteger(0);
 
     public JacketService() {
-        // Додаємо тестові дані (можна змінити чи видалити)
+        // Початкові тестові дані
         jackets.add(new Jacket(idCounter.incrementAndGet(), "Nike", "Tech Fleece", 235, "M", ""));
-        jackets.add(new Jacket(idCounter.incrementAndGet(), "CP Compamy", "Nylon Garment", 399, "XL", ""));
+        jackets.add(new Jacket(idCounter.incrementAndGet(), "CP Company", "Nylon Garment", 399, "XL", ""));
     }
 
     public List<Jacket> getAll() {

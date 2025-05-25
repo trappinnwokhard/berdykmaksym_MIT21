@@ -1,7 +1,6 @@
 package servlet;
 
 import com.google.gson.Gson;
-import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,7 +11,7 @@ import service.JacketService;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/jackets")
+@WebServlet("/jackets/*")
 public class JacketServlet extends HttpServlet {
     private JacketService jacketService = new JacketService();
     private Gson gson = new Gson();
